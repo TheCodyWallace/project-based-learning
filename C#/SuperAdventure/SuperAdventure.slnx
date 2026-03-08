@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Engine/Engine.csproj" Id="93d982ad-b817-4135-9908-7faa4cbae12d" />
+  <Project Path="SuperAdventure/SuperAdventure.csproj" Id="9fba74ae-e955-41e9-b297-7b6af9c62dbb" />
+</Solution>
