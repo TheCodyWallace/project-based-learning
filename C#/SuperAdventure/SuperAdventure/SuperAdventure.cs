@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Engine;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,27 @@ namespace SuperAdventure
 {
     public partial class SuperAdventure : Form
     {
+        private player _player;
+
         public SuperAdventure()
         {
             InitializeComponent();
+
+            _player = new player();
+            _player.currentHitPoints = 10;
+            _player.MaxHitPoints = 10;
+            _player.gold = 20;
+            _player.EXP = 0;
+            _player.level = 1;
+
+            lblHitPoints.Text = _player.currentHitPoints.ToString();
+            lblGold.Text = _player.gold.ToString();
+            lblEXP.Text = _player.EXP.ToString();
+            lblLevel.Text = _player.level.ToString();
+
         }
 
+        
         private void SuperAdventure_Load(object sender, EventArgs e)
         {
 
@@ -32,9 +49,6 @@ namespace SuperAdventure
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            lblGold.Text = "123";
-        }
+
     }
 }
