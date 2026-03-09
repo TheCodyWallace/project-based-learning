@@ -13,7 +13,7 @@ namespace SuperAdventure
 {
     public partial class SuperAdventure : Form
     {
-        private player _player;
+        private Player _player;
 
         public SuperAdventure()
         {
@@ -23,17 +23,12 @@ namespace SuperAdventure
 
 
 
-            _player = new player();
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.gold = 20;
-            _player.EXP = 0;
-            _player.level = 1;
+            _player = new Player(10,10,20,0,1);
 
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
-            lblGold.Text = _player.gold.ToString();
+            lblGold.Text = _player.Gold.ToString();
             lblEXP.Text = _player.EXP.ToString();
-            lblLevel.Text = _player.level.ToString();
+            lblLevel.Text = _player.Level.ToString();
 
         }
 
