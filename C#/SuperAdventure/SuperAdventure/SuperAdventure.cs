@@ -23,16 +23,8 @@ namespace SuperAdventure
 
 
 
-<<<<<<< HEAD
             _player = new Player(10,10,20,0,1);
-=======
-            _player = new player();
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.gold = 20;
-            _player.EXP = 0;
-            _player.level = 1;
->>>>>>> c4d2a1f93fdbba99709fb0f9d17deba1db76cdee
+
 
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
